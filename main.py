@@ -1,3 +1,5 @@
+from stats import number_of_words
+
 def main():
     book_path = "books/frankenstein.txt"
     print(f"--- Begin report of {book_path} ---")
@@ -15,9 +17,6 @@ def main():
 
 def sort_on(dict):
     return dict["num"]
-
-def number_of_words(string):
-    return len(string.split())
 
 def get_book_text(path):
     with open(path) as f:
